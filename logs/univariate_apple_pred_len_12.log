@@ -1,0 +1,134 @@
+Args in experiment:
+Namespace(model='informer', data='custom', root_path='/Users/phamnam/Downloads/Informer2020-main-3/data_cleaned', data_path='Cleaned_Apple.csv', features='S', target='Apple_Price', freq='b', checkpoints='./checkpoints/', seq_len=48, label_len=48, pred_len=12, enc_in=1, dec_in=1, c_out=1, d_model=128, n_heads=4, e_layers=1, d_layers=2, s_layers=[3, 2, 1], d_ff=2048, factor=5, padding=0, distil=True, dropout=0.05, attn='prob', embed='timeF', activation='gelu', output_attention=False, do_predict=False, mix=True, cols=None, num_workers=0, itr=2, train_epochs=20, batch_size=32, patience=3, learning_rate=0.0001, des='test', loss='mse', lradj='type1', use_amp=False, inverse=False, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', detail_freq='b')
+Use CPU
+>>>>>>>start training : informer_custom_ftS_sl48_ll48_pl12_dm128_nh4_el1_dl2_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_test_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 797
+val 112
+test 233
+Epoch: 1 cost time: 24.03844118118286
+Epoch: 1, Steps: 24 | Train Loss: 0.3030344 Vali Loss: 0.1305425 Test Loss: 0.2833609
+Validation loss decreased (inf --> 0.130542).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 24.275723934173584
+Epoch: 2, Steps: 24 | Train Loss: 0.1929119 Vali Loss: 0.1119712 Test Loss: 0.1813228
+Validation loss decreased (0.130542 --> 0.111971).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3 cost time: 25.007055282592773
+Epoch: 3, Steps: 24 | Train Loss: 0.1595678 Vali Loss: 0.0910736 Test Loss: 0.1860212
+Validation loss decreased (0.111971 --> 0.091074).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4 cost time: 30.872777938842773
+Epoch: 4, Steps: 24 | Train Loss: 0.1445027 Vali Loss: 0.0815944 Test Loss: 0.1869979
+Validation loss decreased (0.091074 --> 0.081594).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5 cost time: 32.62610101699829
+Epoch: 5, Steps: 24 | Train Loss: 0.1339301 Vali Loss: 0.0790737 Test Loss: 0.2015412
+Validation loss decreased (0.081594 --> 0.079074).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 6 cost time: 33.919191122055054
+Epoch: 6, Steps: 24 | Train Loss: 0.1296390 Vali Loss: 0.0783995 Test Loss: 0.1596083
+Validation loss decreased (0.079074 --> 0.078400).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7 cost time: 33.63788914680481
+Epoch: 7, Steps: 24 | Train Loss: 0.1266009 Vali Loss: 0.0771048 Test Loss: 0.1625908
+Validation loss decreased (0.078400 --> 0.077105).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8 cost time: 33.64643311500549
+Epoch: 8, Steps: 24 | Train Loss: 0.1267265 Vali Loss: 0.0753250 Test Loss: 0.1754875
+Validation loss decreased (0.077105 --> 0.075325).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9 cost time: 29.212364196777344
+Epoch: 9, Steps: 24 | Train Loss: 0.1209509 Vali Loss: 0.0762692 Test Loss: 0.1666798
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 10 cost time: 23.957135915756226
+Epoch: 10, Steps: 24 | Train Loss: 0.1236094 Vali Loss: 0.0728271 Test Loss: 0.1694727
+Validation loss decreased (0.075325 --> 0.072827).  Saving model ...
+Updating learning rate to 1.953125e-07
+Epoch: 11 cost time: 23.52470898628235
+Epoch: 11, Steps: 24 | Train Loss: 0.1243003 Vali Loss: 0.0748866 Test Loss: 0.1693119
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 9.765625e-08
+Epoch: 12 cost time: 24.052342891693115
+Epoch: 12, Steps: 24 | Train Loss: 0.1258088 Vali Loss: 0.0738986 Test Loss: 0.1660185
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 4.8828125e-08
+Epoch: 13 cost time: 24.223412036895752
+Epoch: 13, Steps: 24 | Train Loss: 0.1231378 Vali Loss: 0.0747488 Test Loss: 0.1676300
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : informer_custom_ftS_sl48_ll48_pl12_dm128_nh4_el1_dl2_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_test_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 233
+test shape: (7, 32, 12, 1) (7, 32, 12, 1)
+test shape: (224, 12, 1) (224, 12, 1)
+mse:0.1717989146709442, mae:0.3466125726699829
+Use CPU
+>>>>>>>start training : informer_custom_ftS_sl48_ll48_pl12_dm128_nh4_el1_dl2_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_test_1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 797
+val 112
+test 233
+Epoch: 1 cost time: 24.267019033432007
+Epoch: 1, Steps: 24 | Train Loss: 0.4373707 Vali Loss: 0.1320144 Test Loss: 0.3486779
+Validation loss decreased (inf --> 0.132014).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 27.46895480155945
+Epoch: 2, Steps: 24 | Train Loss: 0.2111689 Vali Loss: 0.1296846 Test Loss: 0.2497361
+Validation loss decreased (0.132014 --> 0.129685).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3 cost time: 19.88500714302063
+Epoch: 3, Steps: 24 | Train Loss: 0.1867336 Vali Loss: 0.1156873 Test Loss: 0.2400011
+Validation loss decreased (0.129685 --> 0.115687).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4 cost time: 17.30488681793213
+Epoch: 4, Steps: 24 | Train Loss: 0.1674714 Vali Loss: 0.1129395 Test Loss: 0.2131103
+Validation loss decreased (0.115687 --> 0.112940).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5 cost time: 16.898283004760742
+Epoch: 5, Steps: 24 | Train Loss: 0.1639378 Vali Loss: 0.1189384 Test Loss: 0.1673548
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-06
+Epoch: 6 cost time: 17.001007080078125
+Epoch: 6, Steps: 24 | Train Loss: 0.1591355 Vali Loss: 0.1070401 Test Loss: 0.2040322
+Validation loss decreased (0.112940 --> 0.107040).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7 cost time: 17.351273775100708
+Epoch: 7, Steps: 24 | Train Loss: 0.1595208 Vali Loss: 0.1073794 Test Loss: 0.1985495
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-06
+Epoch: 8 cost time: 16.88442897796631
+Epoch: 8, Steps: 24 | Train Loss: 0.1558731 Vali Loss: 0.1056598 Test Loss: 0.1979248
+Validation loss decreased (0.107040 --> 0.105660).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9 cost time: 16.799869060516357
+Epoch: 9, Steps: 24 | Train Loss: 0.1549851 Vali Loss: 0.1092418 Test Loss: 0.1999215
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 10 cost time: 16.93548011779785
+Epoch: 10, Steps: 24 | Train Loss: 0.1582577 Vali Loss: 0.1095825 Test Loss: 0.1989306
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.953125e-07
+Epoch: 11 cost time: 16.708696842193604
+Epoch: 11, Steps: 24 | Train Loss: 0.1536469 Vali Loss: 0.1055853 Test Loss: 0.1936004
+Validation loss decreased (0.105660 --> 0.105585).  Saving model ...
+Updating learning rate to 9.765625e-08
+Epoch: 12 cost time: 17.089277267456055
+Epoch: 12, Steps: 24 | Train Loss: 0.1533507 Vali Loss: 0.1053487 Test Loss: 0.1999087
+Validation loss decreased (0.105585 --> 0.105349).  Saving model ...
+Updating learning rate to 4.8828125e-08
+Epoch: 13 cost time: 16.882309913635254
+Epoch: 13, Steps: 24 | Train Loss: 0.1542250 Vali Loss: 0.1062388 Test Loss: 0.1998544
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.44140625e-08
+Epoch: 14 cost time: 17.149693965911865
+Epoch: 14, Steps: 24 | Train Loss: 0.1558126 Vali Loss: 0.1134609 Test Loss: 0.1961819
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.220703125e-08
+Epoch: 15 cost time: 17.004531860351562
+Epoch: 15, Steps: 24 | Train Loss: 0.1548337 Vali Loss: 0.1087655 Test Loss: 0.1960357
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : informer_custom_ftS_sl48_ll48_pl12_dm128_nh4_el1_dl2_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_test_1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 233
+test shape: (7, 32, 12, 1) (7, 32, 12, 1)
+test shape: (224, 12, 1) (224, 12, 1)
+mse:0.19490423798561096, mae:0.3712635338306427
